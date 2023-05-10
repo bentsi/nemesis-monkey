@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nemesis-monkey"
+version = "0.1.0"
+description = "A framework for applying faults on targets"
+authors = ["Bentsi Magidovich <magidovich@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "nemesis_monkey"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "3.3.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
